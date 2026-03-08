@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 
 const browser = await chromium.launch();
 const context = await browser.newContext({
-  viewport: { width: 1400, height: 800 },
+  viewport: { width: 1400, height: 700 },
   deviceScaleFactor: 2,
   colorScheme: 'dark',
 });
