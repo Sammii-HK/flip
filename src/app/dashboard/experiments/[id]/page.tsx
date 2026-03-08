@@ -1,6 +1,8 @@
 import { db } from "@/lib/db";
 import { computeStats } from "@/lib/stats";
 import { notFound } from "next/navigation";
+
+export const dynamic = "force-dynamic";
 import { ExperimentControls } from "@/components/experiment-controls";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";

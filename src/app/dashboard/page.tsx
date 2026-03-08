@@ -2,6 +2,8 @@ import { db } from "@/lib/db";
 import { Flag, FlaskConical, Activity } from "lucide-react";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 const DEMO_KEY_ID = process.env.DEMO_API_KEY_ID || "";
 
 export default async function DashboardPage() {

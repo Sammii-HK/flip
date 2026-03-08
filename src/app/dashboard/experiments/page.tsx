@@ -1,6 +1,8 @@
 import { db } from "@/lib/db";
 import { ExperimentList } from "@/components/experiment-list";
 
+export const dynamic = "force-dynamic";
+
 const DEMO_KEY_ID = process.env.DEMO_API_KEY_ID || "";
 
 export default async function ExperimentsPage() {

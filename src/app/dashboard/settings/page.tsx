@@ -2,6 +2,8 @@ import { db } from "@/lib/db";
 import { ApiKeyManager } from "@/components/api-key-manager";
 import { SdkSnippet } from "@/components/sdk-snippet";
 
+export const dynamic = "force-dynamic";
+
 export default async function SettingsPage() {
   const keys = await db.apiKey.findMany({
     orderBy: { createdAt: "desc" },
