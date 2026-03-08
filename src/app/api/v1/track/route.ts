@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       variantId: variant.id,
       apiKeyId: apiKey!.id,
       eventName,
-      metadata: metadata ?? undefined,
+      metadata: (metadata as Record<string, string | number | boolean>) ?? undefined,
     },
   });
 

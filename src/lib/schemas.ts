@@ -32,5 +32,5 @@ export const trackSchema = z.object({
   visitorId: z.string().min(1),
   variantKey: z.string().min(1),
   eventName: z.string().min(1),
-  metadata: z.record(z.unknown()).optional(),
+  metadata: z.record(z.string(), z.unknown()).optional(),
 });
